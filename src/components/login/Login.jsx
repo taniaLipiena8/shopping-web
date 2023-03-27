@@ -2,6 +2,7 @@ import React from 'react'
 import CustomInput from '../form-template/CustomInput'
 import { Formik, Form } from 'formik'
 import './Login.css'
+import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom'
 import { loginSchema } from '../form-template/ValidationSchema'
 
@@ -27,7 +28,7 @@ const Login = () => {
 
                     <CustomInput label='Password' name='password' type='password' placeholder="Enter your password" />
 
-                    <button className='login' type="submit" disabled={isSubmitting}>Submit</button>
+                    <Button className='login' variant='success' type='submit' disabled={isSubmitting}>Login</Button>
                 </Form>
             )}
 
