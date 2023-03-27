@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
+import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa'
 
 const Star = ({ number}) => {
     let checked = Number((Math.floor(number)))
@@ -21,7 +21,7 @@ const Star = ({ number}) => {
             {half && <FaStarHalfAlt color='#FADB14' />}
 
             {[...Array(unchecked)].map((star, index) => (
-                <FaStar color='#F0F0F0' key={index} />
+                <FaRegStar color='#FADB14' key={index} />
             ))}
 
             

@@ -10,7 +10,6 @@ const cartsSlice = createSlice({
     initialState,
     reducers: {
         cartAdded: {
-
             reducer(state, action) {
                 const itemExist = state.cartItems.findIndex((item) => item.id === action.payload.id)
 
@@ -19,7 +18,6 @@ const cartsSlice = createSlice({
                 } else {
                     state.cartItems.push(action.payload)
                 }
-
             },
             prepare(id, title, description, price, stock, thumbnail) {
                 return {
@@ -38,8 +36,6 @@ const cartsSlice = createSlice({
 
         deleteCart(state, action) {
             console.log(action.payload);
-
-
 
             const updatedCartItems = state.cartItems.filter((item) => item.id !== action.payload)
 
