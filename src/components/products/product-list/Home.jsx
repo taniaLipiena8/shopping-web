@@ -76,7 +76,7 @@ const Home = () => {
         <>
             <div className='container-fluid-mx-2'>
                 <div className='row mt-5 mx-2'>
-                    <div className='col-md-2'>
+                    <div className='col-md-2 categories'>
                         <h3>Category</h3>
                         <ul className='category-sidebar'>
                             {categories.map(category => (

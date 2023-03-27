@@ -16,7 +16,7 @@ const ProductCard = ({ handleCardClick, variant, product, handleClick, buttonTxt
                     <Card.Text>
                         {product.title}
                     </Card.Text>
-                    <Card.Title>${product.price}</Card.Title>
+                    <Card.Title style={{fontWeight:'bold'}}>${product.price}</Card.Title>
                     <Card.Text>
                         {product.brand}
                     </Card.Text>

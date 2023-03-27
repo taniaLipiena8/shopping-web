@@ -8,6 +8,7 @@
 .cart-details {
     height:100vh;
     overflow-y: scroll;
+    
 }
 
 .total-summary {
@@ -22,4 +23,5 @@
 
 .total-sidebar h5{
     margin-top: 15px;
+    font-weight: bold;
 }

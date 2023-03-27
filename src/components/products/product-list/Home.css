@@ -5,6 +5,11 @@
     display: table;
 }
 
+.categories{
+    border-right: 1px solid #EAE8E4;
+    border-top: 1px solid #EAE8E4;;
+}
+
 .category-sidebar li{
     border-bottom: 1px solid #EAE8E4;
     
