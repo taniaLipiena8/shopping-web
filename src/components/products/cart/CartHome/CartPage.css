@@ -1,0 +1,25 @@
+.row-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+
+.cart-details {
+    height:100vh;
+    overflow-y: scroll;
+}
+
+.total-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-cart-summary{
+    border-bottom: 1px solid #EAE8E4;
+}
+
+.total-sidebar h5{
+    margin-top: 15px;
+}

@@ -1,0 +1,14 @@
+.card-image:hover,
+.card-text:hover {
+    cursor: pointer;
+}
+
+.div-button{
+    display: flex;
+    justify-content: center;
+}
+
+.card-btn{
+    width: 200px;
+    margin-top: 20px;
+}

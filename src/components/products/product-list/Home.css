@@ -1,0 +1,28 @@
+.category-sidebar {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0px;
+    display: table;
+}
+
+.category-sidebar li{
+    border-bottom: 1px solid #EAE8E4;
+    
+}
+
+.category-sidebar li p{
+    display: table-cell;
+    padding: 10px;
+}
+
+.category-sidebar li:hover{
+    cursor: pointer;
+    background-color: #EBECEB;
+}
+
+.home-product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+}
