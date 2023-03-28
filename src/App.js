@@ -25,6 +25,7 @@ function App() {
       navigate('/products')
     }
   }, [username, navigate, pathname])
+  
   return (
     <div className="App">
       <UserContextProvider>

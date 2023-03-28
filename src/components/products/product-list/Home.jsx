@@ -13,7 +13,6 @@ const Home = () => {
     const [chosenCtg, setChosenCtg] = useState('')
     const [products, setProducts] = useState([])
     const [search] = useSearchParams()
-
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
@@ -37,7 +36,6 @@ const Home = () => {
         setProducts(data)
     }
 
-
     useEffect(() => {
         fetchCategories()
         if (chosenCtg !== '') {
@@ -56,15 +54,16 @@ const Home = () => {
         } 
     },[search])
 
-
-
     const handleAdd = ({ id, title, description, price, stock, thumbnail }) => {
-        dispatch(
-            cartAdded(id, title, description, price, stock, thumbnail)
-        )
-
-        alert('succesfully added to cart')
-
+        try {
+            dispatch(
+                cartAdded(id, title, description, price, stock, thumbnail)
+            )
+            alert('succesfully added to cart')
+        } catch (error) {
+            alert('error in adding to cart')
+        }
+        
     }
 
     const handleCardClick = (id) => {
@@ -82,10 +81,9 @@ const Home = () => {
                             {categories.map(category => (
                                 <Category category={category} setChosenCtg={setChosenCtg} key={category} />
                             ))}
-
                         </ul>
-
                     </div>
+
                     <div className='col-md-10 ' >
                         <h3>
                             Selected Category : {chosenCtg ? chosenCtg : 'All'}

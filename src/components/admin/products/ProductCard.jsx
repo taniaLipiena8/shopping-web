@@ -9,11 +9,11 @@ const ProductCard = ({ handleCardClick, variant, product, handleClick, buttonTxt
         handleCardClick(product.id)
     }
     return (
-        <Card style={{ width: '17rem', height: '400px' }} key={product.id} >
+        <Card style={{ width: '17rem', height: '430px' }} key={product.id} >
             <Card.Img className='card-image' style={{ height: '12rem' }} variant="top" src={product.thumbnail} onClick={() => clicked()} />
             <Card.Body>
                 <div className='card-text' onClick={() => clicked()} style={{ marginBottom: '10px' }}>
-                    <Card.Text>
+                    <Card.Text style={{height: '48px'}}>
                         {product.title}
                     </Card.Text>
                     <Card.Title style={{fontWeight:'bold'}}>${product.price}</Card.Title>
